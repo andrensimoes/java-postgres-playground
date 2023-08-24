@@ -15,6 +15,7 @@ public class App {
 
     public App(){
         try(var conn = getConnection()){
+            System.out.println("entrou no construtor abertura de conexão");
             listarEstados(conn);
             localizarEstado(conn, "PR");
             listarDadosTabela(conn, "produto");
