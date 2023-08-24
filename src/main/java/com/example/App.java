@@ -14,6 +14,7 @@ public class App {
     }
 
     public App(){
+        System.out.println("contrutor chamado");
         try(var conn = getConnection()){
             System.out.println("entrou no construtor abertura de conexão");
             listarEstados(conn);
